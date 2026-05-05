@@ -2,15 +2,15 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => '1_FORGE - Rek.ai',
-    'description' => 'A extension to include the Rek.ai service into your TYPO3 website',
+    'description' => 'This is the official TYPO3 extension for Rek.ai (developed in close cooperation with Rek.ai). Rek.ai is a content recommendation service that allows to easily improve your website with personalised content. Integration in your TYPO3 website can be done by every content editor that was given access to the extensions Backend Module and Content Elements.',
     'category' => 'plugin',
-    'author' => 'dkd Internet Service GmbH',
+    'author' => '1_FORGE',
     'author_email' => 'support@dkd.de',
-    'state' => 'alpha',
-    'version' => '1.0.0',
+    'state' => 'stable',
+    'version' => '1.2.2',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.0.0-13.99.99',
+            'typo3' => '12.4.0-13.99.99',
         ],
     ],
 ];
