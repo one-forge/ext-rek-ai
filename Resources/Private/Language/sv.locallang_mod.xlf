@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" target-language="sv">
+        <body>
+            <trans-unit id="mlang_tabs_tab">
+                <source>Rek.ai</source>
+                <target state="translated">Rek.ai</target>
+            </trans-unit>
+            <trans-unit id="mlang_labels_tablabel">
+                <source>Rek.ai Configuration</source>
+                <target state="translated">Konfiguration av Rek.ai</target>
+            </trans-unit>
+            <trans-unit id="mlang_labels_tabdescr">
+                <source>Configure the Rek.ai extension</source>
+                <target state="translated">Konfigurera Rek.ai-tillägget</target>
+            </trans-unit>
+
+            <trans-unit id="module.configuration.title">
+                <source>Rek.ai - Configuration</source>
+                <target state="translated">Rek.ai - Konfiguration</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.section.scriptIntegration">
+                <source>Script Integration</source>
+                <target state="translated">Skriptintegration</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.loadScripts.label">
+                <source>Load Scripts</source>
+                <target state="translated">Ladda skript</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.loadScripts.description">
+                <source>Inject the script on all frontend pages</source>
+                <target state="translated">Infoga skriptet på alla sidor</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.loadScripts.help">
+                <source>When enabled, the script URL below will be added as a &lt;script defer&gt; tag on every frontend page.</source>
+                <target state="translated">När funktionen är aktiverad läggs skript-URL:en nedan till som en &lt;script defer&gt; -tagg på varje sida.</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.nonCssVersion.label">
+                <source>Non CSS Version</source>
+                <target state="translated">Version utan CSS</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.nonCssVersion.description">
+                <source>Disable inline CSS injection by the Rek.ai script</source>
+                <target state="translated">Inaktivera infogning av inline-CSS via Rek.ai-skriptet</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.nonCssVersion.help">
+                <source>When enabled, data-allowinlinecss="false" will be added to the script tag.</source>
+                <target state="translated">När funktionen är aktiverad läggs data-allowinlinecss="false" till i script-taggen.</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.scriptUrl.label">
+                <source>Script URL</source>
+                <target state="translated">Skriptets webbadress</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.scriptUrl.help">
+                <source>Enter the full URL to the Rek.ai script, e.g. https://static.rekai.eu/xyz.js</source>
+                <target state="translated">Ange den fullständiga webbadressen till Rek.ai-skriptet, t.ex. https://static.rekai.se/xyz.js</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.preview">
+                <source>Preview</source>
+                <target state="translated">Förhandsgranska</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.section.autocomplete">
+                <source>Search Autocomplete</source>
+                <target state="translated">Sökordsförslag</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteMode.label">
+                <source>Autocomplete mode</source>
+                <target state="translated">Aktiveringsläge</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteMode.disabled">
+                <source>Disabled</source>
+                <target state="translated">Inaktiverad</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteMode.selector">
+                <source>Enabled with selector</source>
+                <target state="translated">Aktiverad med HTML-selektor</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteMode.customScript">
+                <source>Enabled with custom script</source>
+                <target state="translated">Aktiverad med anpassat skript</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteMode.help">
+                <source>Should the plugin load the autocomplete script</source>
+                <target state="translated">Ska pluginet ladda skriptet för sökordsförslag</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.section.autocompleteSettings">
+                <source>Autocomplete Settings</source>
+                <target state="translated">Inställningar för sökordsförslag</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteSelector.label">
+                <source>Autocomplete selector</source>
+                <target state="translated">HTML-selektor för sökordsförslag</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteSelector.help">
+                <source>Enter the HTML selector for the field you want to enable autocomplete for.</source>
+                <target state="translated">Ange HTML-selektorn för det fält som du vill aktivera sökordsförslag för.</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteOpenOnClick.label">
+                <source>Open on click</source>
+                <target state="translated">Öppna vid klick</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteOpenOnClick.description">
+                <source>Navigate to the selected item when clicking on it.</source>
+                <target state="translated">Navigera till sidan vid klick.</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteUseCurrentLanguage.label">
+                <source>Use current language</source>
+                <target state="translated">Använd nuvarande språk</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteUseCurrentLanguage.description">
+                <source>Use the current language for the autocomplete (determined by the TYPO3 language).</source>
+                <target state="translated">Använd det aktuella språket för sökordsförslag (bestäms av TYPO3-språket).</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteNumberOfResults.label">
+                <source>Number of results</source>
+                <target state="translated">Antal sökresultat</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteNumberOfResults.help">
+                <source>Number of results to show in the autocomplete dropdown.</source>
+                <target state="translated">Antal sökresultat som ska visas.</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteCustomScript.label">
+                <source>Custom autocomplete script</source>
+                <target state="translated">Anpassat skript för sökordsförslag</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteCustomScript.help">
+                <source>Insert a custom JavaScript snippet that will be added after the base script.</source>
+                <target state="translated">Addera anpassad JavaScript-kod som läggs till efter basskriptet.</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.save">
+                <source>Save Configuration</source>
+                <target state="translated">Spara inställningar</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.site.label">
+                <source>Site</source>
+                <target state="translated">Webbplats</target>
+            </trans-unit>
+            <trans-unit id="module.configuration.noSites">
+                <source>No sites configured. Please create a site configuration first.</source>
+                <target state="translated">Inga webbplatser konfigurerade. Skapa en webbplatskonfiguration först.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

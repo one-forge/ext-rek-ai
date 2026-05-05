@@ -1,0 +1,17 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  OneForge\RekAi\:
+    resource: '../Classes/*'
+
+  OneForge\RekAi\Controller\Backend\ConfigurationController:
+    public: true
+
+  OneForge\RekAi\DataProcessing\RekaiSettingsProcessor:
+    public: true
+
+  OneForge\RekAi\Hook\PageRendererHook:
+    public: true

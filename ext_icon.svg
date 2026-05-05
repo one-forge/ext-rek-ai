@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="87px" viewBox="0 0 120 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>logo-rekai-blue</title>
+    <g id="logo-rekai-blue" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <g id="Group-3" transform="translate(0.000000, 25.000000)">
+                <rect id="Rectangle" fill="#0A00A2" x="0" y="0" width="120" height="25" rx="12.5"></rect>
+                <rect id="Rectangle" fill="#0A00A2" x="0" y="37" width="64" height="25" rx="12.5"></rect>
+                <rect id="Rectangle" fill="#BD10E0" x="76" y="37" width="44" height="25" rx="12.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

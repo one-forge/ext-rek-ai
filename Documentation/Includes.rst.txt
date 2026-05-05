@@ -1,0 +1,19 @@
+.. Every .rst file should include this file at the very top.
+.. Use correct path!
+
+.. role:: aspect (emphasis)
+.. role:: html(code)
+.. role:: js(code)
+.. role:: php(code)
+.. role:: rst(code)
+.. role:: sep (strong)
+.. role:: typoscript(code)
+
+.. role:: trash
+.. role:: ext-icon
+
+.. Inline code without syntax highlighting
+.. role:: code(code)
+
+.. default-role:: code
+.. highlight:: php

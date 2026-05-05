@@ -1,0 +1,17 @@
+<html
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        data-namespace-typo3-fluid="true"
+>
+<f:if condition="{rekaiSettings.loadScripts}">
+    <f:variable name="headertext">{f:if(condition: '{data.tx_rekai_show_header} && data.tx_rekai_headertext', then: ' data-headertext="{data.tx_rekai_headertext}"')}</f:variable>
+    <f:variable name="titlemaxlength">{f:if(condition: '{data.tx_rekai_titlemaxlength} && data.tx_rekai_titlemaxlength', then: ' data-titlemaxlength="{data.tx_rekai_titlemaxlength}"')}</f:variable>
+    <f:variable name="nrofhits">{f:if(condition: data.tx_rekai_nrofhits, then: ' data-nrofhits="{data.tx_rekai_nrofhits}"')}</f:variable>
+    <f:variable name="renderstyle">{f:if(condition: data.tx_rekai_renderstyle, then: ' data-renderstyle="{data.tx_rekai_renderstyle}"')}</f:variable>
+    <f:variable name="listcols">{f:if(condition: '{data.tx_rekai_renderstyle} == \'list\' && data.tx_rekai_listcols', then: ' data-listcols="{data.tx_rekai_listcols}"')}</f:variable>
+    <f:variable name="userootpath">{f:if(condition: '{data.tx_rekai_rootpath_mode} == \'subpages\' || {data.tx_rekai_rootpath_mode} == \'level\'', then: ' data-userootpath="true"')}</f:variable>
+    <f:variable name="rootpathlevel">{f:if(condition: '{data.tx_rekai_rootpath_mode} == \'level\'', then: ' data-rootpathlevel="{data.tx_rekai_rootpathlevel}"')}</f:variable>
+    <f:variable name="subtree">{f:if(condition: data.tx_rekai_subtree, then: ' data-subtree="{data.tx_rekai_subtree}"')}</f:variable>
+    <f:variable name="excludechildnodes">{f:if(condition: data.tx_rekai_excludechildnodes, then: ' data-excludechildnodes="true"')}</f:variable>
+    <div class="rek-prediction" id="rek-prediction-ce-{data.uid}"{headertext -> f:format.raw()}{titlemaxlength -> f:format.raw()}{nrofhits -> f:format.raw()}{renderstyle -> f:format.raw()}{listcols -> f:format.raw()}{userootpath -> f:format.raw()}{rootpathlevel -> f:format.raw()}{subtree -> f:format.raw()}{excludechildnodes -> f:format.raw()} {data.tx_rekai_extra_attributes -> f:format.raw()}></div>
+</f:if>
+</html>

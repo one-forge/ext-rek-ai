@@ -1,0 +1,21 @@
+CREATE TABLE tt_content (
+    tx_rekai_show_header        tinyint(1) unsigned NOT NULL DEFAULT '1',
+    tx_rekai_headertext         varchar(255) NOT NULL DEFAULT '',
+    tx_rekai_titlemaxlength     int(11) DEFAULT 0 NOT NULL,
+    tx_rekai_nrofhits           int(11) NOT NULL DEFAULT '5',
+    tx_rekai_renderstyle        varchar(20) NOT NULL DEFAULT 'pills',
+    tx_rekai_listcols           int(11) NOT NULL DEFAULT '2',
+    tx_rekai_rootpath_mode      varchar(20) NOT NULL DEFAULT '',
+    tx_rekai_rootpathlevel      int(11) NOT NULL DEFAULT '1',
+    tx_rekai_subtree_pages      text,
+    tx_rekai_excludechildnodes  tinyint(1) unsigned NOT NULL DEFAULT '0',
+    tx_rekai_extra_attributes   text,
+
+    tx_rekai_qna_branch_mode             varchar(20) NOT NULL DEFAULT '',
+    tx_rekai_qna_subtree_pages           text,
+    tx_rekai_qna_nrofhits                int(11) NOT NULL DEFAULT '0',
+    tx_rekai_qna_tags                    varchar(255) NOT NULL DEFAULT '',
+    tx_rekai_qna_hide_answer_link_same   tinyint(1) unsigned NOT NULL DEFAULT '0',
+    tx_rekai_qna_hide_answer_link        tinyint(1) unsigned NOT NULL DEFAULT '0',
+    tx_rekai_qna_disable_highlight       tinyint(1) unsigned NOT NULL DEFAULT '0'
+);

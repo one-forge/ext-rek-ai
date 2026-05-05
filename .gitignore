@@ -1,0 +1,15 @@
+# Exclude composer vendor folder
+/vendor/
+/bin/
+composer.lock
+
+# Ignore temporary and cache data
+/.Build
+.cache*
+*~
+node_modules/
+.phpunit.cache
+Documentation-GENERATED-temp
+
+# IDE specific
+.idea/

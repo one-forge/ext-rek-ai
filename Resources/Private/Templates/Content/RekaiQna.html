@@ -1,0 +1,16 @@
+<html
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        data-namespace-typo3-fluid="true"
+>
+<f:if condition="{rekaiSettings.loadScripts}">
+    <f:variable name="nrofhits">{f:if(condition: data.tx_rekai_qna_nrofhits, then: ' data-nrofhits="{data.tx_rekai_qna_nrofhits}"')}</f:variable>
+    <f:variable name="userootpath">{f:if(condition: '{data.tx_rekai_qna_branch_mode} == \'current\'', then: ' data-userootpath="true"')}</f:variable>
+    <f:variable name="subtree">{f:if(condition: '{data.tx_rekai_qna_branch_mode} == \'subtree\' && data.tx_rekai_qna_subtree', then: ' data-subtree="{data.tx_rekai_qna_subtree}"')}</f:variable>
+    <f:variable name="currentpage">{f:if(condition: '{data.tx_rekai_qna_branch_mode} == \'currentpage\'', then: ' data-currentpagequestions="true"')}</f:variable>
+    <f:variable name="tags">{f:if(condition: data.tx_rekai_qna_tags, then: ' data-tags="{data.tx_rekai_qna_tags}"')}</f:variable>
+    <f:variable name="hidesamepage">{f:if(condition: data.tx_rekai_qna_hide_answer_link_same, then: ' data-hideanswerlinktopageifsamepage="true"')}</f:variable>
+    <f:variable name="hidelink">{f:if(condition: data.tx_rekai_qna_hide_answer_link, then: ' data-hideanswerlinktopage="true"')}</f:variable>
+    <f:variable name="highlight">{f:if(condition: data.tx_rekai_qna_disable_highlight, then: ' data-disablehighlight="true"')}</f:variable>
+    <div class="rek-prediction" data-entitytype="rekai-qna" id="rek-prediction-ce-{data.uid}"{nrofhits -> f:format.raw()}{userootpath -> f:format.raw()}{subtree -> f:format.raw()}{currentpage -> f:format.raw()}{tags -> f:format.raw()}{hidesamepage -> f:format.raw()}{hidelink -> f:format.raw()}{highlight -> f:format.raw()}></div>
+</f:if>
+</html>

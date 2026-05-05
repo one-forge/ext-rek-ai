@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" target-language="de">
+        <body>
+            <trans-unit id="ce.rekai_rec.title">
+                <source>Rek.ai Recommendations</source>
+                <target state="translated">Rek.ai Empfehlungen</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.description">
+                <source>This element inserts Rek.ai recommendations and offers multiple display layouts</source>
+                <target state="translated">Dieses Element zeigt Empfehlungen von Rek.ai und bietet verschiedene Darstellungsoptionen.</target>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_rec.tab.display">
+                <source>Display</source>
+                <target state="translated">Darstellung</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.tab.source">
+                <source>Recommendation Source</source>
+                <target state="translated">Quelle der Empfehlungen</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.tab.advanced">
+                <source>Advanced</source>
+                <target state="translated">Erweitert</target>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_rec.show_header">
+                <source>Show Header</source>
+                <target state="translated">Header anzeigen</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.titlemaxlength">
+                <source>Title max length</source>
+                <target state="translated">Maximale Titellänge</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.headertext">
+                <source>Header Text</source>
+                <target state="translated">Header-Text</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.nrofhits">
+                <source>Number of Hits</source>
+                <target state="translated">Anzahl der Treffer</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.renderstyle">
+                <source>Render Style</source>
+                <target state="translated">Darstellungsstil</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.listcols">
+                <source>Number of Columns</source>
+                <target state="translated">Anzahl der Spalten</target>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_rec.rootpath_mode">
+                <source>Recommendation Source</source>
+                <target state="translated">Quelle der Empfehlungen</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.rootpath_mode.none">
+                <source>Current page</source>
+                <target state="translated">Aktuelle Seite</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.rootpath_mode.subpages">
+                <source>Use only subpages of the current page</source>
+                <target state="translated">Nur Unterseiten der aktuellen Seite verwenden</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.rootpath_mode.level">
+                <source>Use subpages from a specific level</source>
+                <target state="translated">Unterseiten ab einer bestimmten Ebene verwenden</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.rootpathlevel">
+                <source>Root Path Level</source>
+                <target state="translated">Root Path Level</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.excludechildnodes">
+                <source>Exclude child nodes of the starting point</source>
+                <target state="translated">Unterseiten des Startpunkts ausschließen</target>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_rec.set_language">
+                <source>Set Language</source>
+                <target state="translated">Sprache festlegen</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.extra_attributes">
+                <source>Extra Attributes</source>
+                <target state="translated">Zusätzliche Attribute</target>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_qna.title">
+                <source>Rek.ai Questions and Answers</source>
+                <target state="translated">Rek.ai Fragen &amp; Antworten</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.description">
+                <source>This element will display the Rek.ai questions and answers on your website.</source>
+                <target state="translated">Dieses Element zeigt die Rek.ai Fragen und Antworten auf Ihrer Website an.</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.tab.options">
+                <source>QnA Options</source>
+                <target state="translated">Q&amp;A Optionen</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode">
+                <source>Filter from a site branch</source>
+                <target state="translated">Nach Seitenbereich filtern</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode.none">
+                <source>Questions will not be filtered on site branch</source>
+                <target state="translated">Fragen werden nicht nach Seitenbereich gefiltert</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode.current">
+                <source>Questions filtered based on current site branch</source>
+                <target state="translated">Fragen basierend auf dem aktuellen Seitenbereich</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode.subtree">
+                <source>Questions filtered based on specific subtree(s)</source>
+                <target state="translated">Fragen basierend auf ausgewählten Teilbereichen</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode.currentpage">
+                <source>Questions from the current page</source>
+                <target state="translated">Fragen von der aktuellen Seite</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.subtree_pages">
+                <source>Select subtree pages</source>
+                <target state="translated">Seiten aus Teilbereichen auswählen</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.subtree_pages">
+                <source>Select subtree pages</source>
+                <target state="translated">Seiten aus Teilbereichen auswählen</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.nrofhits">
+                <source>Number of Questions and Answers displayed</source>
+                <target state="translated">Anzahl der angezeigten Fragen und Antworten</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.tags">
+                <source>Filter on tags</source>
+                <target state="translated">Nach Tags filtern</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.hide_answer_link_same">
+                <source>Hide answer link to page if same page</source>
+                <target state="translated">Antwort-Link ausblenden, wenn Zielseite identisch ist</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.hide_answer_link">
+                <source>Hide answer link to page</source>
+                <target state="translated">Antwort-Link ausblenden</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.disable_highlight">
+                <source>Disable highlight</source>
+                <target state="translated">Hervorhebung deaktivieren</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

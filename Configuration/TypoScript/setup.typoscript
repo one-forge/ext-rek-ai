@@ -1,0 +1,23 @@
+tt_content.rekai_recommendations = FLUIDTEMPLATE
+tt_content.rekai_recommendations {
+    templateName = RekaiRecommendations
+
+    templateRootPaths {
+        10 = EXT:one_forge_rekai/Resources/Private/Templates/Content/
+    }
+
+    dataProcessing {
+        10 = OneForge\RekAi\DataProcessing\RekaiSettingsProcessor
+    }
+}
+
+tt_content.rekai_qna = FLUIDTEMPLATE
+tt_content.rekai_qna {
+    templateName = RekaiQna
+    templateRootPaths {
+        10 = EXT:one_forge_rekai/Resources/Private/Templates/Content/
+    }
+    dataProcessing {
+        10 = OneForge\RekAi\DataProcessing\RekaiSettingsProcessor
+    }
+}

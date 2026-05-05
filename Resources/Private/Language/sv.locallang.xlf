@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" target-language="sv">
+        <body>
+            <trans-unit id="ce.rekai_rec.title">
+                <source>Rek.ai Recommendations</source>
+                <target state="translated">Rek.ai:s rekommendationer</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.description">
+                <source>This element inserts Rek.ai recommendations and offers multiple display layouts</source>
+                <target state="translated">Denna komponent infogar rekommendationer från Rek.ai och erbjuder flera olika visningsformat</target>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_rec.tab.display">
+                <source>Display</source>
+                <target state="translated">Visa</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.tab.source">
+                <source>Recommendation Source</source>
+                <target state="translated">Källa för rekommendationen</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.tab.advanced">
+                <source>Advanced</source>
+                <target state="translated">Avancerat</target>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_rec.show_header">
+                <source>Show Header</source>
+                <target state="translated">Visa sidhuvud</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.titlemaxlength">
+                <source>Hit Title max Length</source>
+                <target state="translated">Maximal längd på träffens titel</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.headertext">
+                <source>Header Text</source>
+                <target state="translated">Huvudrubrik</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.nrofhits">
+                <source>Number of Hits</source>
+                <target state="translated">Antal träffar</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.renderstyle">
+                <source>Render Style</source>
+                <target state="translated">Renderingsstil</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.listcols">
+                <source>Number of Columns</source>
+                <target state="translated">Antal kolumner</target>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_rec.rootpath_mode">
+                <source>Recommendation Source</source>
+                <target state="translated">Källa för rekommendationen</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.rootpath_mode.none">
+                <source>Current page</source>
+                <target state="translated">Nuvarande sida</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.rootpath_mode.subpages">
+                <source>Use only subpages of the current page</source>
+                <target state="translated">Använd endast undersidor till den aktuella sidan</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.rootpath_mode.level">
+                <source>Use subpages from a specific level</source>
+                <target state="translated">Använd undersidor från en viss nivå</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.rootpathlevel">
+                <source>Root Path Level</source>
+                <target state="translated">Rotvägsnivå</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.subtree_pages">
+                <source>Select Subtree Pages</source>
+                <target state="translated">Välj sidor i underkatalogen</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.excludechildnodes">
+                <source>Exclude first level child nodes from starting point</source>
+                <target state="translated">Uteslut underordnade noder till startpunkten</target>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_rec.set_language">
+                <source>Set Language</source>
+                <target state="translated">Ställ in språk</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.extra_attributes">
+                <source>Extra Attributes</source>
+                <target state="translated">Ytterligare egenskaper</target>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_qna.title">
+                <source>Rek.ai Questions and Answers</source>
+                <target state="translated">Rek.ai – Frågor och svar</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.description">
+                <source>This element will display the Rek.ai questions and answers on your website.</source>
+                <target state="translated">Denna komponent visar frågor och svar från Rek.ai på din webbplats.</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.tab.options">
+                <source>Options</source>
+                <target state="translated">Frågor och svar alternativ</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode">
+                <source>Filter from a site branch</source>
+                <target state="translated">Filtrera från en webbplatsgren</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode.none">
+                <source>Questions will not be filtered on site branch</source>
+                <target state="translated">Frågorna kommer inte att filtreras på webbplatsens gren</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode.current">
+                <source>Questions filtered based on current site branch</source>
+                <target state="translated">Frågor som filtrerats utifrån aktuell webbplatsgren</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode.subtree">
+                <source>Questions filtered based on specific subtree(s)</source>
+                <target state="translated">Frågor som filtrerats utifrån specifika underträd</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode.currentpage">
+                <source>Questions from the current page</source>
+                <target state="translated">Frågor från den aktuella sidan</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.subtree_pages">
+                <source>Select subtree pages</source>
+                <target state="translated">Välj sidor i underkatalogen</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.nrofhits">
+                <source>Number of Questions and Answers displayed</source>
+                <target state="translated">Antal visade frågor och svar</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.tags">
+                <source>Filter on tags</source>
+                <target state="translated">Filtrera efter taggar</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.hide_answer_link_same">
+                <source>Hide answer link to page if same page</source>
+                <target state="translated">Dölj länken till sidan om det är samma sida</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.hide_answer_link">
+                <source>Hide answer link to page</source>
+                <target state="translated">Dölj svarets länk till sidan</target>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.disable_highlight">
+                <source>Disable highlight</source>
+                <target state="translated">Inaktivera markering</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

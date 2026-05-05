@@ -1,0 +1,339 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Module"/>
+
+<f:section name="Content">
+    <h1>
+        <f:translate
+                key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.title"
+                extensionName="one_forge_rekai"/>
+    </h1>
+
+    <f:be.pageRenderer/>
+
+    <f:flashMessages queueIdentifier="{flashMessageQueueIdentifier}"/>
+
+    <f:if condition="{noSites}">
+        <f:then>
+            <div class="alert alert-warning">
+                <f:translate key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.noSites"
+                             extensionName="one_forge_rekai"/>
+            </div>
+        </f:then>
+        <f:else>
+
+            <f:if condition="{sites -> f:count()} > 1">
+                <div class="mb-4">
+                    <div class="input-group" style="max-width: 480px;">
+                        <label class="input-group-text" for="siteSelectorInput">
+                            <f:translate key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.site.label"
+                                         extensionName="one_forge_rekai"/>
+                        </label>
+                        <select class="form-select"
+                                id="siteSelectorInput">
+                            <f:for each="{sites}" as="siteOption">
+                                <option value="{siteOption.url}"
+                                        <f:if condition="{siteOption.identifier} == {selectedSiteIdentifier}">selected</f:if>>
+                                    {siteOption.identifier} ({siteOption.base})
+                                </option>
+                            </f:for>
+                        </select>
+                    </div>
+                </div>
+            </f:if>
+
+            <form method="post" action="{formAction}">
+                <input type="hidden" name="rekaiSite" value="{selectedSiteIdentifier}"/>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2>
+                            <f:translate
+                                    key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.section.scriptIntegration"
+                                    extensionName="one_forge_rekai"/>
+                        </h2>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="mb-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input"
+                                       type="checkbox"
+                                       id="loadScripts"
+                                       name="loadScripts"
+                                       value="1"
+                                       {f:if(condition: loadScripts, then: 'checked')} />
+                                <label class="form-check-label" for="loadScripts">
+                                    <strong>
+                                        <f:translate
+                                                key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.loadScripts.label"
+                                                extensionName="one_forge_rekai"/>
+                                    </strong>
+                                    –
+                                    <f:translate
+                                            key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.loadScripts.description"
+                                            extensionName="one_forge_rekai"/>
+                                </label>
+                            </div>
+                            <div class="form-text text-muted mt-1">
+                                <f:translate
+                                        key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.loadScripts.help"
+                                        extensionName="one_forge_rekai"/>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input"
+                                       type="checkbox"
+                                       id="nonCssVersion"
+                                       name="nonCssVersion"
+                                       value="1"
+                                       {f:if(condition: nonCssVersion, then: 'checked')} />
+                                <label class="form-check-label" for="nonCssVersion">
+                                    <strong>
+                                        <f:translate
+                                                key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.nonCssVersion.label"
+                                                extensionName="one_forge_rekai"/>
+                                    </strong>
+                                    –
+                                    <f:translate
+                                            key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.nonCssVersion.description"
+                                            extensionName="one_forge_rekai"/>
+                                </label>
+                            </div>
+                            <div class="form-text text-muted mt-1">
+                                <f:translate
+                                        key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.nonCssVersion.help"
+                                        extensionName="one_forge_rekai"/>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="scriptUrl" class="form-label">
+                                <strong>
+                                    <f:translate
+                                            key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.scriptUrl.label"
+                                            extensionName="one_forge_rekai"/>
+                                </strong>
+                            </label>
+                            <input type="url"
+                                   class="form-control"
+                                   id="scriptUrl"
+                                   name="scriptUrl"
+                                   placeholder="https://static.rekai.se/xyz.js"
+                                   value="{scriptUrl}"/>
+                            <div class="form-text text-muted">
+                                <f:translate
+                                        key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.scriptUrl.help"
+                                        extensionName="one_forge_rekai"/>
+                            </div>
+                        </div>
+
+                        <f:if condition="{scriptUrl}">
+                            <div class="alert alert-info">
+                                <strong>
+                                    <f:translate
+                                            key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.preview"
+                                            extensionName="one_forge_rekai"/>
+                                    :</strong><br/>
+                                <pre style="background:#f8f9fa;padding:0.8rem;border-radius:4px;"><code>&lt;script src="{scriptUrl}" defer<f:if
+                                        condition="{nonCssVersion}"> data-allowinlinecss="false"</f:if>&gt;&lt;/script&gt;</code></pre>
+                            </div>
+                        </f:if>
+
+                        <h2>
+                            <f:translate
+                                    key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.section.autocomplete"
+                                    extensionName="one_forge_rekai"/>
+                        </h2>
+
+                        <div class="mb-3">
+                            <label class="form-label"><strong>
+                                <f:translate
+                                        key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteMode.label"
+                                        extensionName="one_forge_rekai"/>
+                            </strong></label>
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                       type="radio"
+                                       name="autocompleteMode"
+                                       id="autocompleteMode0"
+                                       value="0"
+                                <f:if condition="{autocompleteMode} == 0">checked</f:if>
+                                />
+                                <label class="form-check-label" for="autocompleteMode0">
+                                    <f:translate
+                                            key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteMode.disabled"
+                                            extensionName="one_forge_rekai"/>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                       type="radio"
+                                       name="autocompleteMode"
+                                       id="autocompleteMode1"
+                                       value="1"
+                                <f:if condition="{autocompleteMode} == 1">checked</f:if>
+                                />
+                                <label class="form-check-label" for="autocompleteMode1">
+                                    <f:translate
+                                            key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteMode.selector"
+                                            extensionName="one_forge_rekai"/>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                       type="radio"
+                                       name="autocompleteMode"
+                                       id="autocompleteMode2"
+                                       value="2"
+                                <f:if condition="{autocompleteMode} == 2">checked</f:if>
+                                />
+                                <label class="form-check-label" for="autocompleteMode2">
+                                    <f:translate
+                                            key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteMode.customScript"
+                                            extensionName="one_forge_rekai"/>
+                                </label>
+                            </div>
+                            <div class="form-text text-muted mt-1">
+                                <f:translate
+                                        key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteMode.help"
+                                        extensionName="one_forge_rekai"/>
+                            </div>
+                        </div>
+
+                        <h3 class="mt-4">
+                            <f:translate
+                                    key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.section.autocompleteSettings"
+                                    extensionName="one_forge_rekai"/>
+                        </h3>
+
+                        <div class="mb-3">
+                            <label for="autocompleteSelector" class="form-label"><strong>
+                                <f:translate
+                                        key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteSelector.label"
+                                        extensionName="one_forge_rekai"/>
+                            </strong></label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="autocompleteSelector"
+                                   name="autocompleteSelector"
+                                   placeholder="#searchform-input"
+                                   value="{autocompleteSelector}"/>
+                            <div class="form-text text-muted">
+                                <f:translate
+                                        key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteSelector.help"
+                                        extensionName="one_forge_rekai"/>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input class="form-check-input"
+                                   type="checkbox"
+                                   id="autocompleteOpenOnClick"
+                                   name="autocompleteOpenOnClick"
+                                   value="1"
+                            <f:if condition="{autocompleteOpenOnClick}">checked</f:if>
+                            />
+                            <label class="form-check-label" for="autocompleteOpenOnClick">
+                                <strong>
+                                    <f:translate
+                                            key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteOpenOnClick.label"
+                                            extensionName="one_forge_rekai"/>
+                                </strong>
+                                –
+                                <f:translate
+                                        key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteOpenOnClick.description"
+                                        extensionName="one_forge_rekai"/>
+                            </label>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input class="form-check-input"
+                                   type="checkbox"
+                                   id="autocompleteUseCurrentLanguage"
+                                   name="autocompleteUseCurrentLanguage"
+                                   value="1"
+                            <f:if condition="{autocompleteUseCurrentLanguage}">checked</f:if>
+                            />
+                            <label class="form-check-label" for="autocompleteUseCurrentLanguage">
+                                <strong>
+                                    <f:translate
+                                            key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteUseCurrentLanguage.label"
+                                            extensionName="one_forge_rekai"/>
+                                </strong>
+                                –
+                                <f:translate
+                                        key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteUseCurrentLanguage.description"
+                                        extensionName="one_forge_rekai"/>
+                            </label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="autocompleteNumberOfResults" class="form-label"><strong>
+                                <f:translate
+                                        key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteNumberOfResults.label"
+                                        extensionName="one_forge_rekai"/>
+                            </strong></label>
+                            <input type="number"
+                                   class="form-control"
+                                   id="autocompleteNumberOfResults"
+                                   name="autocompleteNumberOfResults"
+                                   min="1"
+                                   value="{autocompleteNumberOfResults}"/>
+                            <div class="form-text text-muted">
+                                <f:translate
+                                        key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteNumberOfResults.help"
+                                        extensionName="one_forge_rekai"/>
+                            </div>
+                        </div>
+
+                        <f:if condition="{autocompleteMode} == 1">
+                            <div class="alert alert-info mt-3">
+                                <strong>
+                                    <f:translate
+                                            key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.preview"
+                                            extensionName="one_forge_rekai"/>
+                                    :</strong>
+                                <pre style="background:#f8f9fa;padding:0.8rem;border-radius:4px;"><code>{autocompletePreviewScript}</code></pre>
+                            </div>
+                        </f:if>
+
+                        <div class="mb-3" id="customScriptWrapper"
+                             style="display: <f:if condition="{autocompleteMode} == 2">block<f:else>none</f:else></f:if>;">
+                            <label for="autocompleteCustomScript" class="form-label"><strong>
+                                <f:translate
+                                        key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteCustomScript.label"
+                                        extensionName="one_forge_rekai"/>
+                            </strong></label>
+                            <textarea class="form-control"
+                                      id="autocompleteCustomScript"
+                                      name="autocompleteCustomScript"
+                                      rows="8"><f:format.raw>{autocompleteCustomScript}</f:format.raw></textarea>
+                            <div class="form-text text-muted">
+                                <f:translate
+                                        key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.autocompleteCustomScript.help"
+                                        extensionName="one_forge_rekai"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-primary">
+                            <f:translate
+                                    key="LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang_mod.xlf:module.configuration.save"
+                                    extensionName="one_forge_rekai"/>
+                        </button>
+                    </div>
+
+                </div>
+            </form>
+
+</f:else>
+    </f:if>
+
+</f:section>
+</html>

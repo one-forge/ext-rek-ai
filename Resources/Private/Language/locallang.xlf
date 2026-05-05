@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages">
+        <body>
+            <trans-unit id="ce.rekai_rec.title">
+                <source>Rek.ai Recommendations</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.description">
+                <source>This element inserts Rek.ai recommendations and offers multiple display layouts</source>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_rec.tab.display">
+                <source>Display</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.tab.source">
+                <source>Recommendation Source</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.tab.advanced">
+                <source>Advanced</source>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_rec.show_header">
+                <source>Show Header</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.titlemaxlength">
+                <source>Hit Title max Length</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.headertext">
+                <source>Header Text</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.nrofhits">
+                <source>Number of Hits</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.renderstyle">
+                <source>Render Style</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.listcols">
+                <source>Number of Columns</source>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_rec.rootpath_mode">
+                <source>Recommendation Source</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.rootpath_mode.none">
+                <source>Current page</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.rootpath_mode.subpages">
+                <source>Use only subpages of the current page</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.rootpath_mode.level">
+                <source>Use subpages from a specific level</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.rootpathlevel">
+                <source>Root Path Level</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.subtree_pages">
+                <source>Select Subtree Pages</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.excludechildnodes">
+                <source>Exclude first level child nodes from starting point</source>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_rec.set_language">
+                <source>Set Language</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_rec.extra_attributes">
+                <source>Extra Attributes</source>
+            </trans-unit>
+
+            <trans-unit id="ce.rekai_qna.title">
+                <source>Rek.ai Questions and Answers</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.description">
+                <source>This element will display the Rek.ai questions and answers on your website.</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.tab.options">
+                <source>Options</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode">
+                <source>Filter from a site branch</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode.none">
+                <source>Questions will not be filtered on site branch</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode.current">
+                <source>Questions filtered based on current site branch</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode.subtree">
+                <source>Questions filtered based on specific subtree(s)</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.branch_mode.currentpage">
+                <source>Questions from the current page</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.subtree_pages">
+                <source>Select subtree pages</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.nrofhits">
+                <source>Number of Questions and Answers displayed</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.tags">
+                <source>Filter on tags</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.hide_answer_link">
+                <source>Hide answer link to page</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.hide_answer_link_same">
+                <source>Hide answer link if same page</source>
+            </trans-unit>
+            <trans-unit id="ce.rekai_qna.disable_highlight">
+                <source>Disable highlight</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

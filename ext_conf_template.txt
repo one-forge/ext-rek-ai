@@ -1,0 +1,26 @@
+# cat=basic; type=boolean; label=Load Scripts: Inject the Rek.ai script on all frontend pages
+loadScripts = 0
+
+# cat=basic; type=string; label=Script URL: Full URL to the Rek.ai script (e.g. https://static.rekai.se/xyz.js)
+scriptUrl =
+
+# cat=basic; type=boolean; label=Non CSS Version: Add data-allowinlinecss="false" to disable Rek.ai inline CSS
+nonCssVersion = 0
+
+# cat=basic; type=integer; label=Autocomplete Mode: 0 = Disabled, 1 = Enabled with selector (default script), 2 = Enabled with custom script
+autocompleteMode = 0
+
+# cat=basic; type=string; label=Autocomplete Selector: CSS selector used when mode = 1 (e.g. #searchform-input)
+autocompleteSelector = #searchform-input
+
+# cat=basic; type=string; label=Custom Autocomplete Script: Full JavaScript block used when mode = 2
+autocompleteCustomScript =
+
+# cat=basic; type=boolean; label=Autocomplete Open On Click: Open autocomplete dropdown on input click
+autocompleteOpenOnClick = 1
+
+# cat=basic; type=boolean; label=Autocomplete Use Current Language: Restrict autocomplete results to current language
+autocompleteUseCurrentLanguage = 1
+
+# cat=basic; type=integer; label=Autocomplete Number Of Results: Number of autocomplete suggestions to display
+autocompleteNumberOfResults = 5

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages">
+        <body>
+            <trans-unit id="mlang_tabs_tab">
+                <source>Rek.ai</source>
+            </trans-unit>
+            <trans-unit id="mlang_labels_tablabel">
+                <source>Rek.ai Configuration</source>
+            </trans-unit>
+            <trans-unit id="mlang_labels_tabdescr">
+                <source>Configure the Rek.ai extension</source>
+            </trans-unit>
+
+            <trans-unit id="module.configuration.title">
+                <source>Rek.ai - Configuration</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.section.scriptIntegration">
+                <source>Script Integration</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.loadScripts.label">
+                <source>Load Scripts</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.loadScripts.description">
+                <source>Inject the script on all frontend pages</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.loadScripts.help">
+                <source>When enabled, the script URL below will be added as a &lt;script defer&gt; tag on every frontend page.</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.nonCssVersion.label">
+                <source>Non CSS Version</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.nonCssVersion.description">
+                <source>Disable inline CSS injection by the Rek.ai script</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.nonCssVersion.help">
+                <source>When enabled, data-allowinlinecss="false" will be added to the script tag.</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.scriptUrl.label">
+                <source>Script URL</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.scriptUrl.help">
+                <source>Enter the full URL to the Rek.ai script, e.g. https://static.rekai.eu/xyz.js</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.preview">
+                <source>Preview</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.section.autocomplete">
+                <source>Search Autocomplete</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteMode.label">
+                <source>Autocomplete mode</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteMode.disabled">
+                <source>Disabled</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteMode.selector">
+                <source>Enabled with selector</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteMode.customScript">
+                <source>Enabled with custom script</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteMode.help">
+                <source>Should the plugin load the autocomplete script</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.section.autocompleteSettings">
+                <source>Autocomplete Settings</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteSelector.label">
+                <source>Autocomplete selector</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteSelector.help">
+                <source>Enter the HTML selector for the field you want to enable autocomplete for.</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteOpenOnClick.label">
+                <source>Open on click</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteOpenOnClick.description">
+                <source>Navigate to the selected item when clicking on it.</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteUseCurrentLanguage.label">
+                <source>Use current language</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteUseCurrentLanguage.description">
+                <source>Use the current language for the autocomplete (determined by the TYPO3 language).</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteNumberOfResults.label">
+                <source>Number of results</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteNumberOfResults.help">
+                <source>Number of results to show in the autocomplete dropdown.</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteCustomScript.label">
+                <source>Custom autocomplete script</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.autocompleteCustomScript.help">
+                <source>Insert a custom JavaScript snippet that will be added after the base script.</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.save">
+                <source>Save Configuration</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.site.label">
+                <source>Site</source>
+            </trans-unit>
+            <trans-unit id="module.configuration.noSites">
+                <source>No sites configured. Please create a site configuration first.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
