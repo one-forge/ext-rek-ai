@@ -1,6 +1,6 @@
 {
     "name": "one-forge/rek-ai",
-    "description": "A extension to include the rek.ai service into your TYPO3 website",
+    "description": "A extension to include the Rek.ai service into your TYPO3 website",
     "type": "typo3-cms-extension",
     "license": [
         "GPL-2.0-or-later"
