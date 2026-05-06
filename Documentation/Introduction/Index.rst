@@ -61,7 +61,7 @@ Requirements
 .. rst-class:: dl-parameters
 
 TYPO3
-   Version 12.0 – 13.x
+   Version 12.4 LTS – 13.4 LTS
 
 PHP
    8.1 or later
