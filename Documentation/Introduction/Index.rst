@@ -75,7 +75,7 @@ Rek.ai account
 Credits
 =======
 
-Developed and maintained by `dkd Internet Service GmbH <https://www.dkd.de/>`_.
+Developed and maintained by `1_FORGE <https://1forge.de/>`_.
 
 .. _feedback:
 

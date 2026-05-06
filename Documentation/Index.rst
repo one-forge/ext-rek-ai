@@ -19,7 +19,7 @@
    en
 
 :Author:
-   dkd Internet Service GmbH
+   1_FORGE
 
 :License:
    This extension is published under the `GNU General Public License v2.0 <https://www.gnu.org/licenses/old-licenses/gpl-2.0.html>`_ or later.
