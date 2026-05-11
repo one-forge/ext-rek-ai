@@ -6,6 +6,18 @@
 Changelog
 =========
 
+.. _changelog-1-3-0:
+
+1.3.0
+=====
+
+*Release date: 11.05.2026*
+
+**Features**
+
+* **TYPO3 14.x compatibility** — the extension now supports TYPO3 14.x in addition to 12.4 and
+  13.4.
+
 .. _changelog-1-2-1:
 
 1.2.1
