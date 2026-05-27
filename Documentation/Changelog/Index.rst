@@ -6,6 +6,19 @@
 Changelog
 =========
 
+.. _changelog-1-3-1:
+
+1.3.1
+=====
+
+*Release date: 27.05.2026*
+
+**Changes**
+
+* **Default script URL** — the *Script URL* field in the extension configuration now ships with a
+  pre-filled demo value (``https://static.rekai.eu/files/demo.min.js``) so the extension works
+  out of the box without requiring manual configuration for evaluation purposes.
+
 .. _changelog-1-3-0:
 
 1.3.0
