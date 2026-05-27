@@ -2,7 +2,7 @@
 loadScripts = 0
 
 # cat=basic; type=string; label=Script URL: Full URL to the Rek.ai script (e.g. https://static.rekai.se/xyz.js)
-scriptUrl =
+scriptUrl = https://static.rekai.eu/files/demo.min.js
 
 # cat=basic; type=boolean; label=Non CSS Version: Add data-allowinlinecss="false" to disable Rek.ai inline CSS
 nonCssVersion = 0
