@@ -178,6 +178,23 @@ $GLOBALS['TCA']['tt_content']['types']['rekai_recommendations'] = [
 $GLOBALS['TCA']['tt_content']['columns'] = array_merge(
     $GLOBALS['TCA']['tt_content']['columns'],
     [
+        'tx_rekai_qna_show_header' => [
+            'label' => 'LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang.xlf:ce.rekai_rec.show_header',
+            'config' => [
+                'type' => 'check',
+                'renderType' => 'checkboxToggle',
+                'default' => 1,
+            ],
+        ],
+        'tx_rekai_qna_headertext' => [
+            'label' => 'LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang.xlf:ce.rekai_rec.headertext',
+            'displayCond' => 'FIELD:tx_rekai_show_header:REQ:true',
+            'config' => [
+                'type' => 'input',
+                'size' => 40,
+                'default' => 'Discover more',
+            ],
+        ],
         'tx_rekai_qna_branch_mode' => [
             'label' => 'LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang.xlf:ce.rekai_qna.branch_mode',
             'config' => [
@@ -276,6 +293,8 @@ $GLOBALS['TCA']['tt_content']['types']['rekai_qna'] = [
             --palette--;;general,
             --palette--;;headers,
         --div--;LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang.xlf:ce.rekai_qna.tab.options,
+            tx_rekai_qna_show_header,
+            tx_rekai_qna_headertext,
             tx_rekai_qna_nrofhits,
             tx_rekai_qna_branch_mode,
             tx_rekai_qna_subtree_pages,

@@ -11,6 +11,8 @@ CREATE TABLE tt_content (
     tx_rekai_excludechildnodes  tinyint(1) unsigned NOT NULL DEFAULT '0',
     tx_rekai_extra_attributes   text,
 
+    tx_rekai_qna_show_header             tinyint(1) unsigned NOT NULL DEFAULT '1',
+    tx_rekai_qna_headertext              varchar(255) NOT NULL DEFAULT '',
     tx_rekai_qna_branch_mode             varchar(20) NOT NULL DEFAULT '',
     tx_rekai_qna_subtree_pages           text,
     tx_rekai_qna_nrofhits                int(11) NOT NULL DEFAULT '0',
@@ -18,5 +20,5 @@ CREATE TABLE tt_content (
     tx_rekai_qna_hide_answer_link_same   tinyint(1) unsigned NOT NULL DEFAULT '0',
     tx_rekai_qna_hide_answer_link        tinyint(1) unsigned NOT NULL DEFAULT '0',
     tx_rekai_qna_disable_highlight       tinyint(1) unsigned NOT NULL DEFAULT '0',
-    tx_rekai_qna_extra_attributes   text,
+    tx_rekai_qna_extra_attributes        text,
 );
