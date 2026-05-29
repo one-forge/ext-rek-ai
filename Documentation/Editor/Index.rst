@@ -200,6 +200,13 @@ Options (tab)
 
 .. rst-class:: dl-parameters
 
+Show Header
+   Toggle (on by default). When enabled, the widget displays a header above the Q&A list.
+
+Header Text
+   *(only visible when Show Header is on)*
+   The text displayed as a header above the Q&A widget. Defaults to ``Discover more``.
+
 Number of Hits
    How many Q&A items to display. Use **0** for no limit. Default: **0**.
 
@@ -239,6 +246,25 @@ Hide link to answer page
 Disable highlighting
    When enabled, Rek.ai's keyword highlighting in answers is turned off.
 
+.. _editor-qna-tab-advanced:
+
+Advanced (tab)
+^^^^^^^^^^^^^^
+
+.. rst-class:: dl-parameters
+
+Extra Attributes
+   Arbitrary HTML data attributes added verbatim to the ``<div class="rek-prediction" data-entitytype="rekai-qna">`` element.
+   Use this to pass custom configuration to the Rek.ai script that is not covered by the
+   standard fields.
+
+   Example value: ``data-foo="bar" data-baz="qux"``
+
+   .. warning::
+
+      The value of this field is output without HTML escaping (``f:format.raw``).
+      Only enter trusted values here.
+
 .. _editor-qna-output:
 
 Resulting HTML
@@ -251,6 +277,7 @@ that the Rek.ai script identifies it as a Q&A widget. For example:
 
    <div class="rek-prediction"
         data-entitytype="rekai-qna"
+        data-headertext="Related Questions"
         data-nrofhits="10"
         data-userootpath="true">
    </div>
@@ -262,5 +289,6 @@ With **Specific pages** selected and tag filtering:
    <div class="rek-prediction"
         data-entitytype="rekai-qna"
         data-subtree="/faq/,/support/"
-        data-tags="returns,shipping">
+        data-tags="returns,shipping"
+        data-foo="bar">
    </div>

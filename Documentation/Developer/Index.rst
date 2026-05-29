@@ -241,6 +241,12 @@ The extension extends ``tt_content`` with the following columns:
    * - Column
      - Type
      - Description
+   * - ``tx_rekai_qna_show_header``
+     - tinyint(1)
+     - Toggle: show widget header (default 1)
+   * - ``tx_rekai_qna_headertext``
+     - varchar(255)
+     - Text displayed above the Q&A list; rendered as ``data-headertext``
    * - ``tx_rekai_qna_branch_mode``
      - varchar(20)
      - Q&A scope: ``''`` (none), ``current``, ``subtree``, or ``currentpage``
@@ -262,6 +268,9 @@ The extension extends ``tt_content`` with the following columns:
    * - ``tx_rekai_qna_disable_highlight``
      - tinyint(1)
      - Disable Rek.ai keyword highlighting in answers (default 0)
+   * - ``tx_rekai_qna_extra_attributes``
+     - text
+     - Raw HTML data-attribute string appended verbatim to the widget ``<div>``
 
 .. _developer-di:
 

@@ -6,6 +6,24 @@
 Changelog
 =========
 
+.. _changelog-1-4-0:
+
+1.4.0
+=====
+
+*Release date: 29.05.2026*
+
+**Features**
+
+* **Q&A content element — Show Header toggle** — the *Rek.ai Questions and Answers* content
+  element now has a *Show Header* toggle and a *Header Text* field (identical to the
+  *Rek.ai Recommendations* element). When enabled, a ``data-headertext`` attribute is rendered
+  on the widget ``<div>``; when disabled, no header is emitted.
+* **Q&A content element — Extra Attributes** — a new *Extra Attributes* field (``Advanced``
+  tab) allows editors to append arbitrary HTML ``data-*`` attributes verbatim to the
+  ``<div class="rek-prediction" data-entitytype="rekai-qna">`` element, identical to the
+  existing field on the *Rek.ai Recommendations* content element.
+
 .. _changelog-1-3-1:
 
 1.3.1
