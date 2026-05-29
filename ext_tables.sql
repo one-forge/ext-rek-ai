@@ -17,5 +17,6 @@ CREATE TABLE tt_content (
     tx_rekai_qna_tags                    varchar(255) NOT NULL DEFAULT '',
     tx_rekai_qna_hide_answer_link_same   tinyint(1) unsigned NOT NULL DEFAULT '0',
     tx_rekai_qna_hide_answer_link        tinyint(1) unsigned NOT NULL DEFAULT '0',
-    tx_rekai_qna_disable_highlight       tinyint(1) unsigned NOT NULL DEFAULT '0'
+    tx_rekai_qna_disable_highlight       tinyint(1) unsigned NOT NULL DEFAULT '0',
+    tx_rekai_qna_extra_attributes   text,
 );

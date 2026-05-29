@@ -257,6 +257,15 @@ $GLOBALS['TCA']['tt_content']['columns'] = array_merge(
                 'default' => 0,
             ],
         ],
+        'tx_rekai_qna_extra_attributes' => [
+            'exclude' => 1,
+            'label' => 'LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang.xlf:ce.rekai_rec.extra_attributes',
+            'config' => [
+                'type' => 'input',
+                'size' => 60,
+                'placeholder' => 'data-foo="bar" data-baz="qux"',
+            ],
+        ],
     ]
 );
 
@@ -274,6 +283,8 @@ $GLOBALS['TCA']['tt_content']['types']['rekai_qna'] = [
             tx_rekai_qna_hide_answer_link_same,
             tx_rekai_qna_hide_answer_link,
             tx_rekai_qna_disable_highlight,
+        --div--;LLL:EXT:one_forge_rekai/Resources/Private/Language/locallang.xlf:ce.rekai_rec.tab.advanced,
+            tx_rekai_qna_extra_attributes,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
             --palette--;;hidden,
             --palette--;;access,
