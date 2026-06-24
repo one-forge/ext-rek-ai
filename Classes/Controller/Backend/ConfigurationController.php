@@ -74,7 +74,7 @@ $selectedSite = $this->resolveSelectedSite($request, $allSites);
                 ContextualFeedbackSeverity::ERROR,
             );
         } else {
-            $this->configService->saveConfiguration(
+            $saved = $this->configService->saveConfiguration(
                 $selectedSite,
                 $loadScripts,
                 $scriptUrl,
@@ -87,7 +87,17 @@ $selectedSite = $this->resolveSelectedSite($request, $allSites);
                 $autocompleteNumberOfResults,
             );
 
-            $this->addFlashMessage('Configuration saved successfully.', 'Saved', ContextualFeedbackSeverity::OK);
+            if ($saved) {
+                $this->addFlashMessage('Configuration saved successfully.', 'Saved', ContextualFeedbackSeverity::OK);
+            } else {
+                $this->addFlashMessage(
+                    'Configuration could not be saved. The site settings file (config/sites/'
+                        . $selectedSite->getIdentifier()
+                        . '/settings.yaml) may not be writable. Please check file permissions on the server.',
+                    'Save failed',
+                    ContextualFeedbackSeverity::ERROR,
+                );
+            }
         }
 
         // PRG: redirect back to GET so a page reload doesn't re-submit

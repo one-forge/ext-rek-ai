@@ -76,6 +76,13 @@ final class RekAiConfigurationService
         return (int)($this->getConfigurationForSite($site)['autocompleteNumberOfResults'] ?? 5);
     }
 
+    /**
+     * Persists the configuration for the given site.
+     *
+     * Returns true on success. On failure the TYPO3 core already enqueues an
+     * error flash message internally; this method returns false so the caller
+     * can skip the success message.
+     */
     public function saveConfiguration(
         Site   $site,
         bool   $loadScripts,
@@ -87,7 +94,7 @@ final class RekAiConfigurationService
         bool   $openOnClick,
         bool   $useCurrentLanguage,
         int    $numberOfResults,
-    ): void {
+    ): bool {
         // Read the actual settings.yaml content (not config.yaml) to preserve other extensions' keys
         $currentSettings = $this->siteSettingsFactory->loadLocalSettings($site->getIdentifier()) ?? [];
 
@@ -103,7 +110,12 @@ final class RekAiConfigurationService
             'autocompleteNumberOfResults'    => $numberOfResults,
         ];
 
-        $this->siteSettingsService->writeSettings($site, $currentSettings);
+        try {
+            $this->siteSettingsService->writeSettings($site, $currentSettings);
+            return true;
+        } catch (\Throwable) {
+            return false;
+        }
     }
 
     public function buildAutocompleteInitScript(Site $site): string
@@ -139,13 +151,11 @@ final class RekAiConfigurationService
         $paramsJs = implode(', ', $paramsParts);
 
         return <<<JS
-<script>
   __rekai.ready(function () {
     var rekAutocomplete = rekai_autocomplete('{$selector}', {
       params: { {$paramsJs} }
     }){$clickHandler};
   });
-</script>
 JS;
     }
 
