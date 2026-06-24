@@ -6,6 +6,24 @@
 Changelog
 =========
 
+.. _changelog-1-4-1:
+
+1.4.1
+=====
+
+*Release date: 24.06.2026*
+
+**Bug fixes**
+
+* **Duplicate script tags** — the :php:`PageRendererHook` no longer injects the Rek.ai
+  ``<script>`` tag more than once when multiple render cycles occur on the same page request.
+
+**Improvements**
+
+* **Verbose error messages** — error states in the extension (e.g. missing or invalid script URL,
+  failed configuration reads) now produce more detailed and actionable log messages to simplify
+  debugging.
+
 .. _changelog-1-4-0:
 
 1.4.0

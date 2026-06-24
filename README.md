@@ -8,7 +8,7 @@ Rek.ai is a content recommendation service that allows to easily improve your we
 | Dependency | Version            |
 |---|--------------------|
 | PHP | `^8.1`             |
-| TYPO3 CMS | `^12.4` or `^13.4` |
+| TYPO3 CMS | `^12.4`, `^13.4` or `^14.0` |
 
 ## Features
 
